@@ -1,4 +1,4 @@
-ActionDispatch::Callbacks.to_prepare do
+
 
   # Requiring plugin's controller and model
   require_dependency 'custom_report'
@@ -11,4 +11,3 @@ ActionDispatch::Callbacks.to_prepare do
   load 'redmine_custom_reports/project_patch.rb'
   load 'redmine_custom_reports/user_patch.rb'
 
-end
